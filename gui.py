@@ -112,6 +112,15 @@ class Gui:
 
     def __get_buttons(self):
 
+        try:
+            os.mkdir('saves')
+            os.mkdir('saves/field')
+            os.mkdir('saves/player')
+        except FileExistsError:
+            pass
+
+       
+        
         saves = os.listdir('saves/field') # dir is your directory path
         number_files = len(saves)
         

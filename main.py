@@ -122,10 +122,14 @@ def main():
             g.is_creating_file = False
 
         #g.pause_menu_display()
+
+
+        
+
         
         pygame.display.update()
 
-        
+
 
     pygame.quit()
 
